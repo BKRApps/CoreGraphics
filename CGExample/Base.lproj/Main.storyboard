@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CGExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1476" y="131"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EGm-h9-haE">
+            <objects>
+                <viewController id="kJX-m0-zD9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iT4-xG-x8f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxe-hL-Rvr" customClass="NumberView" customModule="CGExample" customModuleProvider="target">
+                                <rect key="frame" x="162.5" y="45" width="50" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrO-CH-3e2">
+                                        <rect key="frame" x="21" y="13" width="9.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="UrO-CH-3e2" firstAttribute="centerX" secondItem="pxe-hL-Rvr" secondAttribute="centerX" id="46W-m1-PW2"/>
+                                    <constraint firstItem="UrO-CH-3e2" firstAttribute="centerY" secondItem="pxe-hL-Rvr" secondAttribute="centerY" id="87e-Qi-txM"/>
+                                    <constraint firstAttribute="width" constant="50" id="Hcf-0q-zh9"/>
+                                    <constraint firstAttribute="height" constant="50" id="MS5-s3-sm1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsL-tl-iRF" customClass="LineView" customModule="CGExample" customModuleProvider="target">
+                                <rect key="frame" x="27.5" y="120" width="320" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="MEh-Kr-ZjV"/>
+                                    <constraint firstAttribute="width" constant="320" id="vaD-dO-sCN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="1" green="0.32193456906308082" blue="0.28005772103835369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vY4-Sd-h04" customClass="DashLines" customModule="CGExample" customModuleProvider="target">
+                                <rect key="frame" x="27.5" y="170" width="320" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Era-pK-rFE"/>
+                                    <constraint firstAttribute="height" constant="25" id="aBG-ke-NIs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AN-aH-fZN" customClass="ArcView" customModule="CGExample" customModuleProvider="target">
+                                <rect key="frame" x="17.5" y="220" width="340" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="MpV-LD-wPd"/>
+                                    <constraint firstAttribute="height" constant="150" id="kZA-Es-Hre"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLq-3R-yMn" customClass="ShapesView" customModule="CGExample" customModuleProvider="target">
+                                <rect key="frame" x="25" y="395" width="250" height="125"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="TbZ-FR-PgG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pxe-hL-Rvr" firstAttribute="centerX" secondItem="pmi-k4-SwJ" secondAttribute="centerX" id="4RG-Fz-Tc7"/>
+                            <constraint firstItem="pmi-k4-SwJ" firstAttribute="trailing" secondItem="NLq-3R-yMn" secondAttribute="trailing" constant="100" id="5fp-nh-Htk"/>
+                            <constraint firstItem="vY4-Sd-h04" firstAttribute="centerX" secondItem="pmi-k4-SwJ" secondAttribute="centerX" id="ClK-Is-K7w"/>
+                            <constraint firstItem="vY4-Sd-h04" firstAttribute="top" secondItem="fsL-tl-iRF" secondAttribute="bottom" constant="25" id="Jwu-H3-5Dy"/>
+                            <constraint firstItem="NLq-3R-yMn" firstAttribute="leading" secondItem="pmi-k4-SwJ" secondAttribute="leading" constant="25" id="SWY-QH-Z0j"/>
+                            <constraint firstItem="pxe-hL-Rvr" firstAttribute="top" secondItem="pmi-k4-SwJ" secondAttribute="top" constant="25" id="axT-bS-cU5"/>
+                            <constraint firstItem="0AN-aH-fZN" firstAttribute="centerX" secondItem="pmi-k4-SwJ" secondAttribute="centerX" id="fYZ-OO-oa2"/>
+                            <constraint firstItem="0AN-aH-fZN" firstAttribute="top" secondItem="vY4-Sd-h04" secondAttribute="bottom" constant="25" id="fbj-em-dLf"/>
+                            <constraint firstItem="fsL-tl-iRF" firstAttribute="top" secondItem="pxe-hL-Rvr" secondAttribute="bottom" constant="25" id="hpI-OK-E7D"/>
+                            <constraint firstItem="NLq-3R-yMn" firstAttribute="top" secondItem="0AN-aH-fZN" secondAttribute="bottom" constant="25" id="sP3-gg-ahG"/>
+                            <constraint firstItem="fsL-tl-iRF" firstAttribute="centerX" secondItem="pmi-k4-SwJ" secondAttribute="centerX" id="wxx-rk-U1F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pmi-k4-SwJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoT-On-gVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="-183"/>
+        </scene>
+    </scenes>
+</document>
