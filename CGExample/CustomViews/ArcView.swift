@@ -52,7 +52,5 @@ final class ArcView : UIView {
         path.stroke()
         fillColor.setFill()
         path.fill()
-        
-        
-    }
+        }
 }
